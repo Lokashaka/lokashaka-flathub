@@ -1,0 +1,42 @@
+id: id.lokashaka.Lokashaka
+runtime: org.freedesktop.Platform
+runtime-version: '25.08'
+sdk: org.freedesktop.Sdk
+command: lokashaka
+
+finish-args:
+  - --share=ipc
+  - --share=network
+  - --socket=x11
+
+build-options:
+  no-debuginfo: true
+  strip: false
+
+modules:
+  - name: lokashaka
+    buildsystem: simple
+    only-arches:
+      - x86_64
+    build-commands:
+      - install -d /app/lib/lokashaka
+      - cp -a lokashaka _internal /app/lib/lokashaka/
+      - install -Dm755 run-lokashaka /app/bin/lokashaka
+      - install -Dm644 ${FLATPAK_ID}.desktop /app/share/applications/${FLATPAK_ID}.desktop
+      - install -Dm644 ${FLATPAK_ID}.metainfo.xml /app/share/metainfo/${FLATPAK_ID}.metainfo.xml
+      - install -Dm644 ${FLATPAK_ID}.png /app/share/icons/hicolor/256x256/apps/${FLATPAK_ID}.png
+    sources:
+      - type: archive
+        url: https://github.com/Lokashaka/lokashaka-app/releases/download/v1.0.6/Lokashaka-1.0.6-linux-x86_64.tar.gz
+        sha256: 374f0323b1c18a933b0908b46e7003a783906ef2bd0962f2087a76f4b4932e72
+        strip-components: 1
+      - type: script
+        dest-filename: run-lokashaka
+        commands:
+          - exec /app/lib/lokashaka/lokashaka "$@"
+      - type: file
+        path: id.lokashaka.Lokashaka.desktop
+      - type: file
+        path: id.lokashaka.Lokashaka.metainfo.xml
+      - type: file
+        path: id.lokashaka.Lokashaka.png

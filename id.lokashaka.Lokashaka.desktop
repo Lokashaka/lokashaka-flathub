@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Lokashaka
+Exec=lokashaka
+Icon=id.lokashaka.Lokashaka
+Terminal=false
+Categories=Utility;
