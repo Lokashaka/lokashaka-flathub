@@ -2,7 +2,7 @@
 <component type="desktop-application">
   <id>id.lokashaka.Lokashaka</id>
   <metadata_license>CC0-1.0</metadata_license>
-  <project_license>LicenseRef-proprietary</project_license>
+  <project_license>LicenseRef-proprietary=https://lokashaka.id/terms</project_license>
 
   <name>Lokashaka</name>
   <summary>A desktop application for Character AI</summary>
