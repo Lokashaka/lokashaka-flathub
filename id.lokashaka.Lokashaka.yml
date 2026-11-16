@@ -27,8 +27,8 @@ modules:
       - install -Dm644 ${FLATPAK_ID}.png /app/share/icons/hicolor/256x256/apps/${FLATPAK_ID}.png
     sources:
       - type: archive
-        url: https://github.com/Lokashaka/lokashaka-app/releases/download/v1.0.6/Lokashaka-1.0.6-linux-x86_64.tar.gz
-        sha256: 374f0323b1c18a933b0908b46e7003a783906ef2bd0962f2087a76f4b4932e72
+        url: https://github.com/Lokashaka/lokashaka-app/releases/download/v1.0.6/Lokashaka-1.0.6-linux-x86_64-flathub.tar.gz
+        sha256: 73fbd9f39683febb53211572114d6b42df07ba85ffc8f42e7ee4a06a24fb75ce
         strip-components: 1
       - type: script
         dest-filename: run-lokashaka
