@@ -34,13 +34,10 @@
   </content_rating>
     <screenshots>
     <screenshot type="default">
-      <image type="source">https://raw.githubusercontent.com/Lokashaka/lokashaka-flathub/main/char.png</image>
+      <image type="source">https://raw.githubusercontent.com/Lokashaka/lokashaka-flathub/main/desktop.png</image>
     </screenshot>
     <screenshot>
-      <image type="source">https://raw.githubusercontent.com/Lokashaka/lokashaka-flathub/main/chat.png</image>
-    </screenshot>
-    <screenshot>
-      <image type="source">https://raw.githubusercontent.com/Lokashaka/lokashaka-flathub/main/page.png</image>
+      <image type="source">https://raw.githubusercontent.com/Lokashaka/lokashaka-flathub/main/patpat.png</image>
     </screenshot>
   </screenshots>
 
