@@ -34,9 +34,3 @@ modules:
         dest-filename: run-lokashaka
         commands:
           - exec /app/lib/lokashaka/lokashaka "$@"
-      - type: file
-        path: id.lokashaka.Lokashaka.desktop
-      - type: file
-        path: id.lokashaka.Lokashaka.metainfo.xml
-      - type: file
-        path: id.lokashaka.Lokashaka.png
